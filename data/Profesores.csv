@@ -1,0 +1,24 @@
+Nº,Nombre,Nº horas,Cálculo I,Cálculo II,Álgebra Lineal,Física I,Arquitectura de Computadores,Programación I,Programación II,Estadística,Señales y Sistemas,Bases de Datos,Sistemas Operativos
+1,Profesor 1,15,NO,NO,NO,NO,NO,NO,NO,NO,NO,SI,NO
+2,Profesor 2,15,NO,NO,NO,NO,NO,NO,NO,NO,SI,NO,SI
+3,Profesor 3,24,SI,SI,SI,NO,NO,SI,NO,SI,SI,SI,SI
+4,Profesor 4,24,SI,SI,NO,NO,NO,NO,NO,NO,SI,SI,SI
+5,Profesor 5,24,NO,NO,NO,NO,NO,SI,NO,NO,SI,SI,SI
+6,Profesor 6,24,SI,SI,NO,NO,SI,SI,NO,NO,SI,NO,SI
+7,Profesor 7,11,NO,NO,NO,NO,NO,NO,NO,SI,SI,NO,SI
+8,Profesor 8,24,SI,SI,NO,NO,NO,NO,NO,NO,SI,NO,SI
+9,Profesor 9,24,SI,SI,NO,NO,NO,SI,NO,NO,NO,NO,SI
+10,Profesor 10,24,SI,SI,NO,NO,NO,SI,NO,NO,NO,NO,SI
+11,Profesor 11,22,SI,NO,NO,NO,NO,SI,NO,NO,NO,NO,SI
+12,Profesor 12,24,SI,NO,SI,SI,NO,SI,NO,NO,NO,NO,SI
+13,Profesor 13,24,NO,NO,NO,NO,SI,NO,NO,NO,SI,NO,SI
+14,Profesor 14,24,SI,NO,SI,SI,NO,NO,NO,NO,SI,NO,SI
+15,Profesor 15,24,NO,NO,NO,NO,NO,SI,NO,NO,SI,NO,SI
+16,Profesor 16,20,SI,SI,SI,NO,NO,NO,NO,NO,SI,NO,SI
+17,Profesor 17,25,NO,NO,NO,NO,NO,NO,SI,NO,SI,NO,NO
+18,Profesor 18,24,SI,NO,SI,SI,NO,NO,NO,NO,SI,NO,SI
+19,Profesor 19,24,SI,NO,SI,NO,NO,SI,NO,NO,SI,NO,SI
+20,Profesor 20,30,NO,NO,NO,NO,NO,NO,NO,NO,SI,NO,SI
+21,Profesor 21,24,NO,NO,NO,NO,NO,NO,NO,NO,SI,NO,SI
+22,Profesor 22,24,SI,SI,NO,SI,NO,SI,NO,NO,SI,NO,SI
+23,Profesor 23,18,SI,SI,SI,NO,NO,SI,NO,NO,SI,NO,SI
