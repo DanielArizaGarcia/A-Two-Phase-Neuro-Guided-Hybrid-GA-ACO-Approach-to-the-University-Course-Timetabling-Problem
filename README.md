@@ -39,15 +39,27 @@ Incluye cuadernos con comparativas de líneas base y scripts modulares para repr
 	- `Baselines_algorithms.ipynb`: comparativas con líneas base clásicas.
 - Visualización final: `horario_neuro_final.html` (interactiva con Plotly).
 
-## Requisitos e instalación rápida
-Recomendado Python >= 3.11 (ver `pyproject.toml`). Entorno virtual en Linux:
+## Requisitos e instalación (uv)
+Usamos `uv` (Astral) para gestionar entornos y dependencias a partir de `pyproject.toml`.
+
+1) Instala `uv` (si no lo tienes):
 
 ```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install deap numpy pandas scikit-learn matplotlib seaborn plotly ipykernel nbformat
+curl -Ls https://astral.sh/uv/install.sh | sh
 ```
+
+2) Crea y usa el entorno del proyecto, instalando dependencias:
+
+```bash
+# Desde la raíz del repo
+uv venv
+uv sync
+
+# Activar el entorno (bash)
+source .venv/bin/activate
+```
+
+`uv sync` leerá `pyproject.toml` y resolverá/instalará todas las dependencias.
 
 ## Cómo reproducir (resumen)
 1) Preparar datos: coloca/valida los CSVs en `data/`.
@@ -65,15 +77,25 @@ plot_horario_interactivo(df_horario, filename="horario_neuro_final.html")
 
 ## Ver la solución (HTML)
 - Archivo generado: `horario_neuro_final.html` en la raíz del proyecto.
-- Ábrelo directamente en tu navegador para explorar el horario de forma interactiva.
+- En local, puedes abrirlo con tu navegador.
 
-Desde Linux (con el entorno gráfico):
+Abrir directamente (Linux):
 
 ```bash
 xdg-open horario_neuro_final.html
 ```
 
-O simplemente haz doble clic sobre el archivo en tu explorador de archivos. Si lo abres desde GitHub, descárgalo o clónalo y ábrelo localmente para que se renderice correctamente.
+Servir por HTTP (útil si el navegador bloquea recursos locales):
+
+```bash
+python -m http.server 8080
+# luego visita: http://localhost:8080/horario_neuro_final.html
+```
+
+Limitación README en GitHub: GitHub no embebe archivos HTML interactivos dentro del README por seguridad. Opciones para “verlo” desde GitHub:
+- Enlace directo al archivo: [`horario_neuro_final.html`](./horario_neuro_final.html) (descárgalo y ábrelo localmente).
+- Publicarlo vía GitHub Pages y enlazar la URL pública.
+- Incluir una captura/animación del horario en el README como imagen de referencia.
 
 ## Resultados esperados
 - Fase 1 consigue soluciones factibles de manera robusta en minutos según tamaño.
